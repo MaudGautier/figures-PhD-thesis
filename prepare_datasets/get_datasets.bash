@@ -33,3 +33,8 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 
 # Figure 7.4
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/00_Hotspot_information/1_Polymorphism/Variants_x_Hotspots_with_categories_and_polym.txt ./data/Variants_x_Hotspots_with_categories_and_polym.txt
+
+# Figure 7.5
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/8_Simulations_ABC/Results/Simul_relationship_SNP_density_prop_NCO1_real_mutational_process/Summary/summary.txt ./data/NCO1_summary.txt
+
+
