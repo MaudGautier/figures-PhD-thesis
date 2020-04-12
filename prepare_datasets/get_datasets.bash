@@ -23,3 +23,6 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 
 # Figure 6.7
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/02_Recombinants_and_False_Positives_Dataset/Recombination_events_per_hotspot_with_informative_fragments.txt ./data/Recombination_events_per_hotspot_with_informative_fragments.txt
+
+# Figure 7.3
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/04_dBGC_Analysis/ALL.Fragments.givers.txt ./data/ALL.Fragments.givers.txt

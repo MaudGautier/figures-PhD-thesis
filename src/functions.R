@@ -48,3 +48,21 @@ status_labeller <- function(variable,value){
     return(status_names[value])
 }
 
+
+
+label_hot_categ_NOV_sep <- function(x) {
+    if (is.na(x)) {return(NA)}
+    if (x=="tC.hB+C") {return("CAST")}
+    if (x=="tC.hB")   {return("CAST")}
+    if (x=="tC.hC")   {return("CAST")}
+    if (x=="tB.hB")   {return("B6")}
+    if (x=="tB.hB+C") {return("B6")}
+    if (x=="tB.hC")   {return("B6")}
+    if (x=="NOV.tB.hC") {return("Novel_B6")}
+    if (x=="NOV.tC.hB") {return("Novel_CAST")}
+    if (x=="NOV.NA")  {return(NA)}
+    if (x=="INDEP.hB") {return(NA)}
+    if (x=="INDEP.hB+C") {return(NA)}
+    if (x=="INDEP.hC") {return(NA)}
+    
+}
