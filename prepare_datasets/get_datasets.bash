@@ -21,3 +21,5 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/00_Hotspot_information/1_Polymorphism/Variants_x_Hotspots.txt ./data/Variants_x_Hotspots.txt
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/00_Hotspot_information/2_Peak_detectability/Recombination_rates.txt ./data/Recombination_rates.txt 
 
+# Figure 6.7
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/02_Recombinants_and_False_Positives_Dataset/Recombination_events_per_hotspot_with_informative_fragments.txt ./data/Recombination_events_per_hotspot_with_informative_fragments.txt
