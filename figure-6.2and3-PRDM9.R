@@ -1,3 +1,5 @@
+## TODO: Rewrite script to simplify (function for DMC1 and DMC2 ?)
+
 source("libraries.R")
 
 
@@ -56,8 +58,8 @@ sumup_table_groups_mean <- aggregate(.~vec_group_means, data = table_groups, mea
 # Plot --------------------------------------------------------------------
 
 
-# png(paste("./output/", fig_name, ".png", sep = ""), 
-#     width = width_png, height = height_png)
+png(paste("./output/", fig_name_2, ".png", sep = ""), 
+    width = width_png, height = height_png)
 
 ggplot(sumup_table_groups_mean) +
     geom_errorbar(aes(as.numeric(vec_group_means), ymax=sumup_table_groups_mean$COrate +sumup_table_groups_std$COrate , ymin=sumup_table_groups_mean$COrate -sumup_table_groups_std$COrate)) +
@@ -74,7 +76,7 @@ ggplot(sumup_table_groups_mean) +
           axis.title.x = element_text(margin = margin(t = 10, b = 10)))
 
 
-# dev.off()
+dev.off()
 
 
 
@@ -99,6 +101,9 @@ col1 <- brewer.pal(n=4, name='Accent')[1]
 col2 <- brewer.pal(n=4, name='Accent')[3]
 
 
+
+png(paste("./output/", fig_name_3, ".png", sep = ""), 
+    width = width_png, height = height_png)
 
 
 # PRDM9 With legend - avec les outliers
@@ -131,4 +136,4 @@ ggplot() +
     scale_fill_identity(guide = "legend", name="Hotspot type", breaks = c(col1, col2), labels = c("Symmetric", "Asymmetric"))
 
 
-
+dev.off()
