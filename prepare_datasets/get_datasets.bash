@@ -39,3 +39,7 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/8_Simulations_ABC/
 
 # Figure 8.2
 cp /Users/maudgautier/Documents/These/_RANGE/HFM1_for_figures/List_genotypes_hotspots_refined_with_chr_size.txt ./data/HFM1_List_genotypes_hotspots_refined_with_chr_size.txt
+
+# Figure 8.3
+cp /Users/maudgautier/Documents/These/_RANGE/HFM1_for_figures/All_HFM1_events_target_names.txt ./data/HFM1_All_recombinants_target_names.txt
+cp /Users/maudgautier/Documents/These/_RANGE/HFM1_for_figures/Tot_fragments.txt ./data/HFM1_all_fragments.txt
