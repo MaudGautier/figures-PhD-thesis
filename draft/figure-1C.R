@@ -19,7 +19,7 @@ tab_paigen$RR_Male_cM_Mb_log10 <- log10(tab_paigen$RR_Male_cM_Mb)
 
 # Plot --------------------------------------------------------------------
 
-png(paste("./output/", fig_name, ".png", sep = ""), 
+png(paste("./draft/output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
 lr <- lm(log10(tab_paigen$CO_nb_corrected_for_paigen) ~ log10(tab_paigen$RR_Male_cM_Mb))
