@@ -66,3 +66,21 @@ label_hot_categ_NOV_sep <- function(x) {
     if (x=="INDEP.hC") {return(NA)}
     
 }
+
+
+plot.multi.dens <- function(s, title = "")
+{
+    junk.x = NULL
+    junk.y = NULL
+    for(i in 1:length(s)) {
+        junk.x = c(junk.x, density(s[[i]])$x)
+        junk.y = c(junk.y, density(s[[i]])$y)
+    }
+    xr <- range(junk.x)
+    yr <- range(junk.y)
+    plot(density(s[[1]]), xlim = xr, ylim = yr, main = title)
+    for(i in 1:length(s)) {
+        lines(density(s[[i]]), xlim = xr, ylim = yr, col = i)
+    }
+}
+

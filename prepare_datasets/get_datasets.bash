@@ -24,5 +24,12 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 # Figure 6.7
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/02_Recombinants_and_False_Positives_Dataset/Recombination_events_per_hotspot_with_informative_fragments.txt ./data/Recombination_events_per_hotspot_with_informative_fragments.txt
 
+# Figures 7.2
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/1_Hotspots/2_P9_target_motif_analysis_DEFINITIVE_VERSION/5_Processed_findings/P9_Dom.all_selected_hotspots.Best_score.joined_haplotypes.txt ./data/P9_Dom.all_selected_hotspots.Best_score.joined_haplotypes.txt
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/1_Hotspots/2_P9_target_motif_analysis_DEFINITIVE_VERSION/5_Processed_findings/P9_Cast.all_selected_hotspots.Best_score.joined_haplotypes.txt ./data/P9_Cast.all_selected_hotspots.Best_score.joined_haplotypes.txt
+
 # Figure 7.3
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/04_dBGC_Analysis/ALL.Fragments.givers.txt ./data/ALL.Fragments.givers.txt
+
+# Figure 7.4
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/00_Hotspot_information/1_Polymorphism/Variants_x_Hotspots_with_categories_and_polym.txt ./data/Variants_x_Hotspots_with_categories_and_polym.txt
