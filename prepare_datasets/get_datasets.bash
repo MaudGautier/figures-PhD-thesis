@@ -15,3 +15,9 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 # Figure 6.5
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/04_dBGC_Analysis/ALL.Fragments.givers_with_DMC1_SUM_59_60.txt ./data/ALL.Fragments.givers_with_DMC1_SUM_59_60.txt
 
+# Figure 6.6 (and all hotspots with recombinants)
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/06_Drawings/Recombinants_dataset_SNP_table.txt_BIS ./data/Recombinants_dataset_SNP_table.txt_BIS
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/06_Drawings/Per_base_coverages/SUM.recal_reads.coverage_per_base_final ./data/SUM.recal_reads.coverage_per_base_final
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/00_Hotspot_information/1_Polymorphism/Variants_x_Hotspots.txt ./data/Variants_x_Hotspots.txt
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/00_Hotspot_information/2_Peak_detectability/Recombination_rates.txt ./data/Recombination_rates.txt 
+
