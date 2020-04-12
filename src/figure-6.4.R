@@ -177,8 +177,6 @@ p3_bis <- ggplot(tab_test, aes(colour=Genotype)) +
     annotate("text", x=(1433.5-1500)/2, y=0.80, label= "CO: Undefined donor", colour = "grey50") + 
     annotate("text", x=1545-1500+(1875-1545)/2, y=2.80, label= "NCO: B6 donor", colour = "grey50") + 
     annotate("text", x=(1480-1250)/2+(1250-1500), y=3.80, label= "Non-recombination event", colour = "grey50") + 
-    #facet_grid(Status ~ ., scales = 'free', switch = "y", labeller=status_labeller_BIS) +
-    #scale_shape_manual('Variant type', values = myTypes, labels = myLabels, drop = FALSE) +
     geom_vline(aes(xintercept=0), linetype=3, color ="darkgrey") + 
     
     annotate("segment", x = 1875-1500, y = 3.35, xend = 1875-1500, yend = 3.05, colour = "grey50", arrow=arrow(length=unit(0.3,"cm"))) +

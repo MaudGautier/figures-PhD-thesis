@@ -1,31 +1,15 @@
+# Functions used for several scripts --------------------------------------
 
-formatter1000000 <- function(x){ 
-    x/1000000 
-}
-formatter100 <- function(x){ 
-    x/100 
-}
+# Data formatting
+formatter1000000 <- function(x) { x/1000000 }
+formatter100 <- function(x) { x/100 }
 
-
+# Standard error function 
+# (standard deviation divided by the square root of the sample size)
 std <- function(x) sd(x)/sqrt(length(x))
-# sd_upper=function(x) { mean(x)+sd(x) }
-# sd_lower=function(x) { mean(x)-sd(x) }
-# std_upper=function(x) { mean(x)+std(x) }
-# std_lower=function(x) { mean(x)-std(x) }
-
-
-def_sizes <- function(x){ifelse(x == "SNP", 2,2)}
-
-
-# Get right colours
-gg_color_hue <- function(n) {
-    hues = seq(15, 375, length = n + 1)
-    hcl(h = hues, l = 65, c = 100)[1:n]
-}
-
 
 # Rename categories of hotspots
-label_categ <- function(x) {
+relabel_hotspot_category <- function(x) {
     if (x=="tC.hB+C") {return("tC.sym")}
     if (x=="tC.hB")   {return("tC.chC")}
     if (x=="tC.hC")   {return("tC.chB")}
@@ -39,18 +23,9 @@ label_categ <- function(x) {
     if (x=="INDEP.hB+C") {return("INDEP.sym")}
     if (x=="INDEP.hC") {return("INDEP.chB")}
 }
-status_labeller <- function(variable,value){
-    status_names <- list(
-        'CO'="Rec-1S",
-        'Complex'="Rec-MS",
-        'NCO'="Rec-2S"
-    )
-    return(status_names[value])
-}
 
-
-
-label_hot_categ_NOV_sep <- function(x) {
+# Regroup hotspots by PRDM9 target
+relabel_hotspots_by_P9_target <- function(x) {
     if (is.na(x)) {return(NA)}
     if (x=="tC.hB+C") {return("CAST")}
     if (x=="tC.hB")   {return("CAST")}
@@ -64,30 +39,27 @@ label_hot_categ_NOV_sep <- function(x) {
     if (x=="INDEP.hB") {return(NA)}
     if (x=="INDEP.hB+C") {return(NA)}
     if (x=="INDEP.hC") {return(NA)}
-    
 }
 
-
-plot.multi.dens <- function(s, title = "")
-{
-    junk.x = NULL
-    junk.y = NULL
-    for(i in 1:length(s)) {
-        junk.x = c(junk.x, density(s[[i]])$x)
-        junk.y = c(junk.y, density(s[[i]])$y)
-    }
-    xr <- range(junk.x)
-    yr <- range(junk.y)
-    plot(density(s[[1]]), xlim = xr, ylim = yr, main = title)
-    for(i in 1:length(s)) {
-        lines(density(s[[i]]), xlim = xr, ylim = yr, col = i)
-    }
+# Relabel types of recombination events
+rename_events <- function(variable,value){
+    status_names <- list(
+        'CO'="Rec-1S",
+        'Complex'="Rec-MS",
+        'NCO'="Rec-2S"
+    )
+    return(status_names[value])
 }
 
 
 
-# Automatise figure 8.3 ---------------------------------------------------
+# Figure 6.4 --------------------------------------------------------------
 
+def_sizes <- function(x) { ifelse(x == "SNP", 2, 2) }
+
+
+
+# Figure 8.3 --------------------------------------------------------------
 
 ## Pairwise correlations for all events
 get_pairwise_correl_events <- function(table_HFM1_bakgrounds_per_hotspot_with_chr_size, sample1, sample2) {
@@ -201,7 +173,5 @@ get_pairwise_correl_Rec1S <- function(table_HFM1_bakgrounds_per_hotspot_with_chr
     return(plot_correl_CO_events)
     
 }
-
-
 
 

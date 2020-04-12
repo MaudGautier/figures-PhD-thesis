@@ -17,7 +17,7 @@ tab_givers$tot_B6 <- tab_givers$Nb_B_giver_in_complex + tab_givers$Nb_B_giver_in
 tab_givers$tot_CAST <- tab_givers$Nb_C_giver_in_complex + tab_givers$Nb_C_giver_in_simple
 tab_givers$tot <- tab_givers$tot_CAST + tab_givers$tot_B6
 tab_givers$prop_CAST <- tab_givers$tot_CAST/tab_givers$tot
-tab_givers$Hot_categ_bis_nov_sep <- sapply(tab_givers$Hotspot_category, label_hot_categ_NOV_sep)
+tab_givers$Hot_categ_bis_nov_sep <- sapply(tab_givers$Hotspot_category, relabel_hotspots_by_P9_target)
 tab_givers$dBGC_coeff <- 2*tab_givers$prop_CAST-1
 
 alpha_val=0.5

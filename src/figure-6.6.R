@@ -43,7 +43,7 @@ table_recomb_rates <- read.table('./data/Recombination_rates.txt', header = T)
 ########## REDO DRAW RECOMBINNNT WITH RED-YELLOW COLORS AND COMMENTS FROM LAURENT #####
 
 
-categ <- label_categ(tab_frag[which(tab_frag$Hotspot_ID == selected_hotspot),]$Hotspot_category[1])
+categ <- relabel_hotspot_category(tab_frag[which(tab_frag$Hotspot_ID == selected_hotspot),]$Hotspot_category[1])
 nb_recomb <- length(unique(tab_frag[which(tab_frag$Hotspot_ID == selected_hotspot),]$Read_ID))
 
 plot1 <- ggplot(tab_frag[which(tab_frag$Hotspot_ID == selected_hotspot & tab_frag$Status != "Complex"),], aes(colour=Genotype)) + 
@@ -56,7 +56,7 @@ plot1 <- ggplot(tab_frag[which(tab_frag$Hotspot_ID == selected_hotspot & tab_fra
     #scale_x_continuous(limits=c(-1000, 1000)) +
     theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), legend.position=c(0.94,0.5)) + 
     labs(title = paste0(selected_hotspot, "     -     ", categ), x = "Coordinates (relative to the hotspot center)", y = '') +
-    facet_grid(Status ~ ., scales = 'free', switch = "y", labeller=status_labeller) +
+    facet_grid(Status ~ ., scales = 'free', switch = "y", labeller=rename_events) +
     geom_vline(aes(xintercept=0), linetype=2, color ="darkgrey") +
     geom_vline(aes(xintercept=500), linetype=3, color ="darkgrey") +
     geom_vline(aes(xintercept=-500), linetype=3, color ="darkgrey") +
