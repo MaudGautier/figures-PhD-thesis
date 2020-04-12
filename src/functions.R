@@ -147,7 +147,7 @@ get_pairwise_correl_events <- function(table_HFM1_bakgrounds_per_hotspot_with_ch
 }
 
 ## Pairwise correlations for Rec-1S events only
-get_pairwise_correl_Rec1S <- function(sample1, sample2) {
+get_pairwise_correl_Rec1S <- function(table_HFM1_bakgrounds_per_hotspot_with_chr_size, sample1, sample2) {
     
     table_HFM1_bakgrounds_per_hotspot_with_chr_size_onlyP9peak <- table_HFM1_bakgrounds_per_hotspot_with_chr_size[grep("P9peak",table_HFM1_bakgrounds_per_hotspot_with_chr_size$X.Hotspot_ID),]
     
