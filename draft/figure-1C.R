@@ -27,8 +27,9 @@ lr <- lm(log10(tab_paigen$CO_nb_corrected_for_paigen) ~ log10(tab_paigen$RR_Male
 
 ggplot(tab_paigen) +
     geom_point(aes(x = RR_Male_cM_Mb, y = CO_nb_corrected_for_paigen), size=2) +
-    labs(x = expression(paste('CO rate measured by Paigen et al. (2008) (cM/Mb) (log-transformed)')),
-         y = expression(paste('Number of events per kb (log-transformed)'))) +
+    labs(x = 'CO rate (cM/Mb, log-scale)',
+         y = 'Number of recombinant fragments per kb\n(capture-seq, log-scale)') +
+    ggtitle("Chrom. 1 subtelomeric region\nN=33 intervals (37 hotspots)") + 
     theme_classic() +
     scale_x_log10(breaks=trans_breaks("log10", function(x) 10^x), 
                   labels = function(x) format(x, scientific = FALSE)) +
