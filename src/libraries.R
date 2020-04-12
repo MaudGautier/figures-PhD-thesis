@@ -3,6 +3,6 @@
 
 library(ggplot2)
 library(scales)
-source("functions.R")
-library("RColorBrewer")
+source("src/functions.R")
+library(RColorBrewer)
 require(ggbio)

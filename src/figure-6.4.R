@@ -1,6 +1,6 @@
 ## TODO: Rewrite script to simplify (function for DMC1 and DMC2 ?)
 
-source("libraries.R")
+source("src/libraries.R")
 
 
 # Parameters --------------------------------------------------------------
