@@ -6,3 +6,6 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 # Figure 5.3
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/02_Bias_checks/3_Capture/ALL_columns_with_proportions_and_DMC1_and_dBGC.txt ./data/ALL_columns_with_proportions_and_DMC1_and_dBGC.txt
 
+# Figure 6.1
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/08_Compare_with_Paigen//02_Results/PositiveControls_with_all_peaks_compared_to_nb_events_detected_with_informative_fragments_Summed_nb_events_on_interval.txt ./data/PositiveControls_with_all_peaks_compared_to_nb_events_detected_with_informative_fragments_Summed_nb_events_on_interval.txt
+
