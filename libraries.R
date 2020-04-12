@@ -2,4 +2,5 @@
 # running any of the scripts to get the figures.
 
 library(ggplot2)
+library(scales)
 source("functions.R")
