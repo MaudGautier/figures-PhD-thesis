@@ -9,5 +9,9 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 # Figure 6.1
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/08_Compare_with_Paigen//02_Results/PositiveControls_with_all_peaks_compared_to_nb_events_detected_with_informative_fragments_Summed_nb_events_on_interval.txt ./data/PositiveControls_with_all_peaks_compared_to_nb_events_detected_with_informative_fragments_Summed_nb_events_on_interval.txt
 
-# Figure 6.2
+# Figure 6.2 and 6.3
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/03_General_Statistics/05_Distribution_of_recombinants/Intensity_and_counts_good_classes_and_DMC1_with_nb_frags_per_hotspot.txt ./data/Intensity_and_counts_good_classes_and_DMC1_with_nb_frags_per_hotspot.txt
+
+# Figure 6.5
+cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/05_Analyses_of_Recombinants/04_dBGC_Analysis/ALL.Fragments.givers_with_DMC1_SUM_59_60.txt ./data/ALL.Fragments.givers_with_DMC1_SUM_59_60.txt
+
