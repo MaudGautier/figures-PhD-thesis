@@ -37,4 +37,5 @@ cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/6_ThirdSequencing/
 # Figure 7.5
 cp /Users/maudgautier/Documents/These/02_pandata_sshfs/2_dBGC/8_Simulations_ABC/Results/Simul_relationship_SNP_density_prop_NCO1_real_mutational_process/Summary/summary.txt ./data/NCO1_summary.txt
 
-
+# Figure 8.2
+cp /Users/maudgautier/Documents/These/_RANGE/HFM1_for_figures/List_genotypes_hotspots_refined_with_chr_size.txt ./data/HFM1_List_genotypes_hotspots_refined_with_chr_size.txt
