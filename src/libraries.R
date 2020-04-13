@@ -15,6 +15,9 @@ source("src/functions.R")
 
 # Plotting parameters -----------------------------------------------------
 
-color_DOM <- "#F6806D" 
-color_HET <- "#63B3E3"
+# Colours
+color_CAST <- "FFCC00"
+color_B6   <- "#993333"
+color_DOM  <- "#F6806D" 
+color_HET  <- "#63B3E3"
 
