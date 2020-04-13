@@ -24,7 +24,7 @@ table_HFM1_bakgrounds_per_hotspot_with_chr_size[table_HFM1_bakgrounds_per_hotspo
 
 # Plot --------------------------------------------------------------------
 
-png(paste("./output/", fig_name, ".png", sep = ""), 
+png(paste("./output/", fig_name, "-", sample, ".png", sep = ""), 
     width = width_png, height = height_png)
 
 

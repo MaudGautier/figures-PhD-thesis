@@ -44,7 +44,7 @@ for (pair_samples in list(c("S28353", "S28355"),
                           c("S28355", "S28371"))) { 
     sample1 <- pair_samples[1]
     sample2 <- pair_samples[2]
-    png(paste("./output/", fig_name, "_", sample1, "_vs_", sample2, ".png", sep = ""), 
+    png(paste("./output/", fig_name, "-", sample1, "-vs-", sample2, ".png", sep = ""), 
         width = width_png, height = height_png)
     plot_correl <- get_pairwise_correl_Rec1S(table_HFM1_bakgrounds_per_hotspot_with_chr_size, sample1, sample2)
     print(plot_correl)
