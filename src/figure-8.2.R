@@ -3,7 +3,7 @@ source("src/libraries.R")
 
 # Parameters --------------------------------------------------------------
 
-fig_name <- "figure-8.2-bis"
+fig_name <- "figure-8.2"
 width_png <- 2165*0.77
 height_png <- 1240*0.77
 
