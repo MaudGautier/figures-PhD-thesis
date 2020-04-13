@@ -9,7 +9,8 @@ library(scales)
 library(RColorBrewer)
 library(ggbio)
 
-source("src/functions.R")
+# Source file only if available (this way: usable by external scripts)
+if (exists("src/functions.R")) { source("src/functions.R") }
 
 
 
