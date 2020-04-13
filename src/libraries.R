@@ -8,6 +8,7 @@ library(ggplot2)
 library(scales)
 library(RColorBrewer)
 library(ggbio)
+library(reshape2)
 
 # Source file only if available (this way: usable by external scripts)
 if (file.exists("src/functions.R")) { source("src/functions.R") }
