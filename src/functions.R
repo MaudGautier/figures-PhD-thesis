@@ -171,7 +171,8 @@ draw_hotspot_recombinants <- function(tab_frag, table_cov, table_SNPs,
 
 ## Pairwise correlations for all events
 get_pairwise_correl_events <- function(table_HFM1_bakgrounds_per_hotspot_with_chr_size, 
-                                       tab_HFM1_fragments_sequenced, 
+                                       tab_HFM1_fragments_sequenced,
+                                       tab_HFM1_events,
                                        sample1, sample2) {
     
     table_HFM1_bakgrounds_per_hotspot_with_chr_size_onlyP9peak <- table_HFM1_bakgrounds_per_hotspot_with_chr_size[grep("P9peak",table_HFM1_bakgrounds_per_hotspot_with_chr_size$X.Hotspot_ID),]
@@ -231,6 +232,7 @@ get_pairwise_correl_events <- function(table_HFM1_bakgrounds_per_hotspot_with_ch
 ## Pairwise correlations for Rec-1S events only
 get_pairwise_correl_Rec1S <- function(table_HFM1_bakgrounds_per_hotspot_with_chr_size, 
                                       tab_HFM1_fragments_sequenced,
+                                      tab_HFM1_events,
                                       sample1, sample2) {
     
     table_HFM1_bakgrounds_per_hotspot_with_chr_size_onlyP9peak <- table_HFM1_bakgrounds_per_hotspot_with_chr_size[grep("P9peak",table_HFM1_bakgrounds_per_hotspot_with_chr_size$X.Hotspot_ID),]

@@ -54,6 +54,7 @@ for (pair_samples in list(c("S28353", "S28355"),
     # Plot corrrelation
     plot_correl <- get_pairwise_correl_Rec1S(table_HFM1_bakgrounds_per_hotspot_with_chr_size, 
                                              tab_HFM1_fragments_sequenced, 
+                                             tab_HFM1_events,
                                              sample1, sample2)
     print(plot_correl)
     
