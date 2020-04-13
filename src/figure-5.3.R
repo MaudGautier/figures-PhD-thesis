@@ -17,9 +17,11 @@ tab_capture_eff <- read.table('./data/ALL_columns_with_proportions_and_DMC1_and_
 
 # Plot --------------------------------------------------------------------
 
+# Open output file
 png(paste("./output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot(tab_capture_eff, aes(x=tot_B6_frags/(tot_B6_frags + tot_CAST_frags + tot_Recomb_frags), ..count../sum(..count..))) + 
     geom_histogram(fill = "grey", binwidth = 0.01) + 
     theme_classic() +
@@ -31,5 +33,6 @@ ggplot(tab_capture_eff, aes(x=tot_B6_frags/(tot_B6_frags + tot_CAST_frags + tot_
     scale_y_continuous(labels= scales::percent) +
     theme(text=element_text(family="LM Roman 10", size = 35))
 
+# Close output file
 dev.off()
 

@@ -20,9 +20,11 @@ tab_correl_extrapolation_CO_rate$CO_rate_inf_fragments <- tab_correl_extrapolati
 
 # Plot --------------------------------------------------------------------
 
+# Open output file
 png(paste("./output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot(tab_correl_extrapolation_CO_rate) +
     geom_point(aes(x = CO_rate_ABC, y = CO_rate_inf_fragments), size=0.8) +
     labs(x = "CO rate (cM/Mb) extrapolated from the ABC",
@@ -34,5 +36,6 @@ ggplot(tab_correl_extrapolation_CO_rate) +
                 linetype=3) #+
 #geom_abline(intercept = 0, slope =1, linetype=1)
 
+# Close output file
 dev.off()
 

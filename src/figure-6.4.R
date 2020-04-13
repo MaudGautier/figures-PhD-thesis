@@ -217,11 +217,13 @@ tracks("PRDM9 ChIP-seq" = p1,"Markers" = p2_bis, "Fragments" = p3_bis,
 
 # Plot --------------------------------------------------------------------
 
-
+# Open output file
 png(paste("./output/", fig_name_2, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 
+# Close output file
 dev.off()
 
 

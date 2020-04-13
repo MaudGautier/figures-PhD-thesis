@@ -25,9 +25,11 @@ alpha_val=0.5
 
 # Plot --------------------------------------------------------------------
 
+# Open output file
 png(paste("./output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot() + 
     geom_density(aes(tab_givers[which(tab_givers$Hot_categ_bis_nov_sep=="Novel_B6"),]$dBGC_coeff, y=(..count..)/sum(..count..), fill="darkgrey", colour= "darkgrey"), alpha=alpha_val) +
     geom_density(aes(tab_givers[which(tab_givers$Hot_categ_bis_nov_sep=="Novel_CAST"),]$dBGC_coeff, y=(..count..)/sum(..count..), fill="lightgrey", colour= "lightgrey"), alpha=alpha_val) +
@@ -51,5 +53,6 @@ ggplot() +
           legend.position=c(0.5,0.88),
           legend.key.size = unit(2, 'lines'))
 
+# Close output file
 dev.off()
 

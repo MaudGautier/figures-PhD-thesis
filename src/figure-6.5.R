@@ -19,9 +19,11 @@ table_donor_nb_recomb_ok <- table_donor[which(table_donor$Nb_B_giver_in_simple +
 
 # Plot --------------------------------------------------------------------
 
+# Open output file
 png(paste("./output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot(table_donor_nb_recomb_ok) +
     geom_point(aes(x = NA., y = ((1/2)*Nb_C_giver_in_simple + Nb_C_giver_in_complex)/(Nb_C_giver_in_complex + Nb_B_giver_in_complex + (1/2)*(Nb_C_giver_in_simple + Nb_B_giver_in_simple)))) +
     labs(x = "Expected proportion of CAST-donor fragments (based on DMC1 SSDS)",
@@ -32,7 +34,7 @@ ggplot(table_donor_nb_recomb_ok) +
     theme(text=element_text(family="LM Roman 10", size=35)) +
     geom_abline(intercept = 0, slope = 1, linetype=2)
 
-
+# Close output file
 dev.off()
 
 

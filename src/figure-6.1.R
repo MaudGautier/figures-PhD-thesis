@@ -18,10 +18,11 @@ tab_paigen$CO_nb_corrected_for_paigen <- tab_paigen$Tot_recombinants/tab_paigen$
 
 # Plot --------------------------------------------------------------------
 
-
+# Open output file
 png(paste("./output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot(tab_paigen) +
     geom_point(aes(x = log(1+RR_Male_cM_Mb), y = log(1+CO_nb_corrected_for_paigen)), size=2) +
     labs(x = expression(paste('CO rate measured by Paigen et al. (2008) (cM/Mb) (log-transformed)')),
@@ -32,5 +33,6 @@ ggplot(tab_paigen) +
                 slope = lm(log(1+tab_paigen$CO_nb_corrected_for_paigen) ~ log(1+tab_paigen$RR_Male_cM_Mb))$coeff[[2]], 
                 linetype=3)
 
+# Close output file
 dev.off()
 

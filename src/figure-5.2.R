@@ -21,9 +21,11 @@ table_recomb_per_hotspot_with_chr_size$Hotspot_chr <- factor(table_recomb_per_ho
 
 # Plot --------------------------------------------------------------------
 
+# Open output file
 png(paste("./output/", fig_name, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot() +
     geom_segment(data = table_recomb_per_hotspot_with_chr_size,
                  aes(x = 5, xend = 5, y = 0, yend = Chrom_size),
@@ -42,5 +44,6 @@ ggplot() +
     scale_y_continuous(labels=formatter1000000) +
     scale_x_continuous(labels=formatter100)
 
+# Close output file
 dev.off()
 

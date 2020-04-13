@@ -57,10 +57,11 @@ sumup_table_groups_mean <- aggregate(.~vec_group_means, data = table_groups, mea
 
 # Plot --------------------------------------------------------------------
 
-
+# Open output file
 png(paste("./output/", fig_name_2, ".png", sep = ""), 
     width = width_png, height = height_png)
 
+# Plot
 ggplot(sumup_table_groups_mean) +
     geom_errorbar(aes(as.numeric(vec_group_means), ymax=sumup_table_groups_mean$COrate +sumup_table_groups_std$COrate , ymin=sumup_table_groups_mean$COrate -sumup_table_groups_std$COrate)) +
     geom_point(aes(as.numeric(vec_group_means), y = sumup_table_groups_mean$COrate)) +
@@ -75,7 +76,7 @@ ggplot(sumup_table_groups_mean) +
           axis.title.y = element_text(margin = margin(l = 10, r = 10)), 
           axis.title.x = element_text(margin = margin(t = 10, b = 10)))
 
-
+# Close output file
 dev.off()
 
 
