@@ -20,4 +20,6 @@ color_CAST <- "FFCC00"
 color_B6   <- "#993333"
 color_DOM  <- "#F6806D" 
 color_HET  <- "#63B3E3"
+color_B6_2 <- "#B95353"
+color_CA_2 <- "#EFBC00"
 
