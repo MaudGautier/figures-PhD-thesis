@@ -10,8 +10,7 @@ library(RColorBrewer)
 library(ggbio)
 
 # Source file only if available (this way: usable by external scripts)
-if (exists("src/functions.R")) { source("src/functions.R") }
-
+if (file.exists("src/functions.R")) { source("src/functions.R") }
 
 
 # Plotting parameters -----------------------------------------------------
